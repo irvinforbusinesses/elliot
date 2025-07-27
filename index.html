@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -68,6 +69,21 @@
       100% { transform: translateX(-50%); }
     }
 
+    @keyframes float-glow {
+      0% {
+        transform: translateY(0);
+        filter: brightness(1);
+      }
+      50% {
+        transform: translateY(-4px);
+        filter: brightness(1.15);
+      }
+      100% {
+        transform: translateY(0);
+        filter: brightness(1);
+      }
+    }
+
     .buttons {
       text-align: center;
       margin: 2rem 0;
@@ -83,6 +99,8 @@
       border-radius: 8px;
       transition: transform 0.3s, background 0.3s;
       font-weight: 600;
+      animation: float-glow 3.5s ease-in-out infinite;
+      display: inline-block;
     }
 
     .buttons a:hover {
@@ -107,6 +125,8 @@
       height: 40px;
       filter: brightness(0) invert(1);
       transition: transform 0.3s;
+      animation: float-glow 3.5s ease-in-out infinite;
+      display: inline-block;
     }
 
     .social-icons img:hover {
@@ -236,17 +256,21 @@
   </div>
 
   <div class="buttons" id="buttons-main">
-    <a href="https://youtube.com/@elliot577-j8w?si=ro9crcS9_v0rmLed">My Youtube Channel💫</a>
-    <a href="https://discord.gg/YxEkmT8uBK">My Discord Server 🎮</a>
-    <a href="https://m.twitch.tv/theelliot577/s">My Twitch 🕹️</a>
-    <a href="https://www.tiktok.com/@elliot.577?_t=zn-8wa4jwtc1ig&_r=1">My Tiktok 👑</a>
-    <a href="https://instagram.com/elliotglassock">My Instagram ❤️</a>
-    <a href="mailto:Elliotglassockbusiness@gmail.com">My email for businesses🧑‍💼</a>
+    <a href="https://youtube.com/@elliot577-j8w?si=ro9crcS9_v0rmLed" aria-label="Visit my YouTube channel">My Youtube Channel💫</a>
+    <a href="https://discord.gg/YxEkmT8uBK" aria-label="Join my Discord server">My Discord Server 🎮</a>
+    <a href="https://m.twitch.tv/theelliot577/s" aria-label="Visit my Twitch profile">My Twitch 🕹️</a>
+    <a href="https://www.tiktok.com/@elliot.577?_t=zn-8wa4jwtc1ig&_r=1" aria-label="Visit my TikTok profile">My Tiktok 👑</a>
+    <a href="https://instagram.com/elliotglassock" aria-label="Visit my Instagram profile">My Instagram ❤️</a>
+    <a href="mailto:Elliotglassockbusiness@gmail.com" aria-label="Email me for business inquiries">My email for businesses🧑‍💼</a>
   </div>
 
   <div class="social-icons">
-    <a href="https://www.tiktok.com/@elliot.577?_t=zn-8wa4jwtc1ig&_r=1" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
-    <a href="https://instagram.com/elliotglassock" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"></a>
+    <a href="https://www.tiktok.com/@elliot.577?_t=zn-8wa4jwtc1ig&_r=1" target="_blank" aria-label="TikTok profile">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+    </a>
+    <a href="https://instagram.com/elliotglassock" target="_blank" aria-label="Instagram profile">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+    </a>
   </div>
 
   <div class="carousel-container">
